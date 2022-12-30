@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="" />
+    <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/product.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,7 +52,7 @@
       <updated>1672353547009</updated>
       <workItem from="1672353548198" duration="320000" />
       <workItem from="1672353879676" duration="876000" />
-      <workItem from="1672354890299" duration="3368000" />
+      <workItem from="1672354890299" duration="3742000" />
     </task>
     <servers />
   </component>

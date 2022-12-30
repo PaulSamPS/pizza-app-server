@@ -26,6 +26,15 @@ class ProductController {
       next(ApiError.badRequest(e.message))
     }
   }
+
+  async getAll(req, res, next) {
+    try {
+      const products = await Product.find()
+      return res.json(products)
+    } catch (e) {
+      return next(ApiError.badRequest(e.message))
+    }
+  }
 }
 
 module.exports = new ProductController()

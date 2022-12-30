@@ -11,5 +11,6 @@ router.post(
   ]),
   productController.create
 )
+router.get('/', productController.getAll)
 
 module.exports = router
