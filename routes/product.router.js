@@ -12,5 +12,6 @@ router.post(
   productController.create
 )
 router.get('/', productController.getAll)
+router.get('/:pathname', productController.getOne)
 
 module.exports = router

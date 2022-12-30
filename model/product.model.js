@@ -4,14 +4,21 @@ const ProductSchema = new Schema(
   {
     name: { type: String, unique: true },
     description: { type: String },
-    price: { type: Number, defaultValue: 0 },
-    badge: { type: String, defaultValue: null },
+    badge: { type: String, default: null },
+    type: { type: String },
+    pathname: { type: String },
+    promotion: { type: Boolean, default: false },
     img: {
       regular: { type: String },
       slim: { type: String },
     },
+    price: [],
     dough: [],
-    sizes: [],
+    size: [],
+    weight: {
+      regular: { type: Array },
+      slim: { type: Array },
+    },
   },
   { timestamps: false }
 )
