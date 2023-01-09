@@ -4,14 +4,16 @@ const productController = require('../controller/product.controller')
 const fileUpload = require('../utils/file.upload')
 
 router.post(
-  '/',
-  fileUpload.upload('product').fields([
+  '/pizza',
+  fileUpload.upload('products').fields([
     { name: 'regular', maxCount: 1 },
     { name: 'slim', maxCount: 1 },
   ]),
-  productController.create
+  productController.createPizza
 )
-router.get('/', productController.getAll)
-router.get('/:pathname', productController.getOne)
+router.post('/product', fileUpload.upload('products').single('img'), productController.createProduct)
+
+router.get('/pizza', productController.getAllPizzas)
+router.get('/pizza/:id', productController.getOnePizza)
 
 module.exports = router

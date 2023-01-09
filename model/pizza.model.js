@@ -1,6 +1,6 @@
 const { Schema, model } = require('mongoose')
 
-const ProductSchema = new Schema(
+const PizzaSchema = new Schema(
   {
     name: { type: String, unique: true },
     description: { type: String },
@@ -8,11 +8,19 @@ const ProductSchema = new Schema(
     type: { type: String },
     pathname: { type: String },
     promotion: { type: Boolean, default: false },
-    img: { type: String },
-    price: { type: Number },
-    weight: { type: String },
+    img: {
+      regular: { type: String },
+      slim: { type: String },
+    },
+    price: [],
+    dough: [],
+    size: [],
+    weight: {
+      regular: { type: Array },
+      slim: { type: Array },
+    },
   },
   { timestamps: false }
 )
 
-module.exports = model('Product', ProductSchema)
+module.exports = model('Pizza', PizzaSchema)

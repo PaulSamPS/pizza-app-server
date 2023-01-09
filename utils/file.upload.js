@@ -24,7 +24,7 @@ exports.upload = (folderName) => {
       if (mimeType && extname) {
         return cb(null, true)
       }
-      cb('Give proper files format to upload')
+      cb('Укажите правильный формат файлов для загрузки')
     },
   })
 }

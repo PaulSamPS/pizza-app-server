@@ -7,58 +7,16 @@
     <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/product.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/pizza.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/product.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/16608fb4-9fda-4e09-9347-8e097e1f8430.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/1bec771f-b523-4b2a-8b3c-90dc4cd273f6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/22303992-963c-41c5-86d8-58b96651da39.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/27820c2a-3095-4905-a513-07c4ce097808.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/2af7d890-e623-42ce-9dd4-ec6dd27ea22c.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/31a57f95-c5dd-4e7d-9ec8-36cd5e651556.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/36d20aed-0f8a-4ad1-bf49-4ecd6d95a0ea.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/38621368-b0e6-41a6-b5c5-f06220ddec67.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/3bc7d724-4067-4682-8398-479235b37b7e.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/3f9cfb63-9bc8-4cdc-97d7-59645862c85f.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/43edb70a-6aaa-490c-b76f-0288d50a1f6c.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/44eef0fd-a571-423b-adae-bc873a19afd4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/4a9fed92-b5c8-4df0-9c82-9aabe36016c6.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/520f9583-90ea-4788-a2ea-bd9efb381eca.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/58b493e9-c55a-458d-85b1-0c64d3febfeb.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/6203d428-42d1-4182-a34f-50af768b15d8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/63359d03-72b9-458b-9881-e38690fa46a3.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/7029926f-e1bf-4a01-8982-a43a1c9e70ea.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/7138a15d-2320-4e7a-a72a-88c520e8dd7b.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/7151c5fa-90c4-4910-ba1b-8418c17decfd.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/770e45c5-d57c-4608-aa65-d147793a1322.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/7a0cb790-4762-4d87-9152-72beb5f17eab.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/7b993c56-b744-434b-8988-72dce73af13a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/8167284f-1e44-45f0-90fe-50abfda2d85b.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/872313f7-e168-43a7-bdf7-99b5f951e4c4.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/8917ac9f-c481-470d-91c8-9f1a682a0351.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/8e536e65-1516-4d00-91e2-6849e219eb5e.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/97cb798e-2ea5-4453-af46-b241e22bc78a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/a4d0e79d-43fb-4271-999c-0ef468166e3f.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/a8fb6988-899f-4291-b8ef-1b7a84c24152.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/af2a851e-0859-4740-bd9b-a8b9894f2395.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/bb0f97a5-3bb6-4fbe-a78c-1ce3eb98b8c2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/be812bc9-9063-4a42-826c-1d1576374e51.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/bf7ae32a-e58e-4b37-8642-46ee96e72c30.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/c083a998-2d82-4886-8691-aef639c8a0ac.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/c12301ae-a643-421d-99db-325302bb3258.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/c61a1335-7a47-474d-97c2-4f4b91bae00d.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/cb22a19d-c576-4b7e-8d91-0895164dd553.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/cd0d9418-c53b-44aa-9a13-89dc69a99493.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/d376544f-f564-438b-b091-b01e02651fef.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/d81ef782-c071-47c5-b6a3-d2a6d188bfe1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/deb1615f-6a65-43a1-b163-03bf11d79a69.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/ea6e4d87-6ca3-47fd-a263-932c80fe4d1a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/ec846599-dea9-494e-9c43-627d7b5b9774.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/eec96d48-3eda-4133-b422-4e882c2bec65.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/f18e369a-c36f-47b7-85f8-f4666e83cdca.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/f1ae4dec-dcff-4ba6-a76e-6523d2ff5746.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/f3155184-704b-47f2-ba1c-59a5b584f9e7.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/f931844a-cb2b-4adb-8d4a-8b88e5763fd8.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/fb393392-4089-4c5c-bd7c-05c7f67beab6.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/70f7ad2d-9272-49d9-a946-5a1773f38b0a.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/b91c9c4a-cd1c-41db-b9d0-88b2498e7fb1.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/d0306c1b-75d2-42a7-977b-5631400d4443.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/e1b2f456-f4c2-48fa-bce9-c6f4ec7abba2.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/eb9e3856-8ea4-47d9-8e64-3d929cb9d92b.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/fbd789e9-35d1-4d80-9d8d-0d1f39b53325.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/file.upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +64,14 @@
       <workItem from="1672353879676" duration="876000" />
       <workItem from="1672354890299" duration="3830000" />
       <workItem from="1672373332599" duration="2743000" />
-      <workItem from="1672425119348" duration="4588000" />
+      <workItem from="1672425119348" duration="4686000" />
+      <workItem from="1672452586059" duration="1504000" />
+      <workItem from="1672599220722" duration="3493000" />
+      <workItem from="1672693771802" duration="605000" />
+      <workItem from="1672766286317" duration="1226000" />
+      <workItem from="1672901998478" duration="695000" />
+      <workItem from="1672942870564" duration="127000" />
+      <workItem from="1673233340214" duration="3629000" />
     </task>
     <servers />
   </component>
