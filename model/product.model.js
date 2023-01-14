@@ -4,13 +4,13 @@ const ProductSchema = new Schema(
   {
     name: { type: String, unique: true },
     description: { type: String },
-    badge: { type: String, default: null },
     type: { type: String },
+    badge: { type: String, default: null },
     pathname: { type: String },
     promotion: { type: Boolean, default: false },
     img: { type: String },
     price: { type: Number },
-    weight: { type: String },
+    weight: { type: String, default: null },
   },
   { timestamps: false }
 )

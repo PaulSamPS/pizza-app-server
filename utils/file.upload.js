@@ -7,9 +7,10 @@ exports.upload = (folderName) => {
   return multer({
     storage: multer.diskStorage({
       destination: (req, file, cb) => {
-        const path = `static/${folderName}${req.body.name && `/${req.body.name}`}`
+        console.log(req.body)
+        const path = `static/${folderName}/${req.body.name}`
         fs.mkdirSync(path, { recursive: true })
-        cb(null, `static/${folderName}${req.body.name && `/${req.body.name}`}`)
+        cb(null, path)
       },
       filename: (req, file, cb) => {
         cb(null, uuid.v4() + path.extname(file.originalname))

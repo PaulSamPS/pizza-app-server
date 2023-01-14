@@ -40,9 +40,8 @@ class ProductController {
 
   async createProduct(req, res, next) {
     try {
-      let { name, price, description, badge, size, weight, promotion, type, pathname } = req.body
-      const { filename: img } = req.file
-      console.log(req.file)
+      let { name, price, description, type, badge, size, weight, promotion, pathname } = req.body
+      const img = req.file.filename
 
       const product = await Product.create({
         name,
@@ -52,7 +51,7 @@ class ProductController {
         promotion,
         type,
         pathname,
-        img: req.file.filename,
+        img,
         size,
         weight,
       })
@@ -72,11 +71,30 @@ class ProductController {
     }
   }
 
+  async getAllProducts(req, res, next) {
+    try {
+      const products = await Product.find()
+      return res.json(products)
+    } catch (e) {
+      return next(ApiError.badRequest(e.message))
+    }
+  }
+
   async getOnePizza(req, res, next) {
     try {
       const { id } = req.params
       const pizza = await Pizza.findOne({ pathname: id })
       return res.json(pizza)
+    } catch (e) {
+      return next(ApiError.badRequest(e.message))
+    }
+  }
+
+  async getOneProduct(req, res, next) {
+    try {
+      const { id } = req.params
+      const product = await Product.findOne({ pathname: id })
+      return res.json(product)
     } catch (e) {
       return next(ApiError.badRequest(e.message))
     }

@@ -7,15 +7,12 @@
     <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/pizza.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/product.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/product.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/70f7ad2d-9272-49d9-a946-5a1773f38b0a.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/b91c9c4a-cd1c-41db-b9d0-88b2498e7fb1.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/d0306c1b-75d2-42a7-977b-5631400d4443.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/e1b2f456-f4c2-48fa-bce9-c6f4ec7abba2.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/eb9e3856-8ea4-47d9-8e64-3d929cb9d92b.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Ветчина и сыр/fbd789e9-35d1-4d80-9d8d-0d1f39b53325.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/products/Мясной Стартер/a75c7ed3-3dcc-48b6-8a32-170e03a2c92f.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/products/Сырная/89a70a09-d76b-4c9f-ad54-1d00c218e549.webp" beforeDir="false" afterPath="$PROJECT_DIR$/static/product/Сырная/89a70a09-d76b-4c9f-ad54-1d00c218e549.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/products/Сырная/a2a2a294-3b41-4beb-88c5-c5e43c8dc72f.webp" beforeDir="false" afterPath="$PROJECT_DIR$/static/product/Сырная/a2a2a294-3b41-4beb-88c5-c5e43c8dc72f.webp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/file.upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.upload.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,6 +27,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JbjCAFJXeD512eirmCnm7FV3al" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,14 +41,14 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.11.18",
-    "last_opened_file_path": "C:/Users/psamo/WebstormProjects/pizza-app-server",
+    "last_opened_file_path": "C:/Users/psamo/WebstormProjects/pizza-next-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\psamo\\WebstormProjects\\pizza-app-server\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "preferences.general",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -71,7 +71,13 @@
       <workItem from="1672766286317" duration="1226000" />
       <workItem from="1672901998478" duration="695000" />
       <workItem from="1672942870564" duration="127000" />
-      <workItem from="1673233340214" duration="3629000" />
+      <workItem from="1673233340214" duration="4090000" />
+      <workItem from="1673305146602" duration="2427000" />
+      <workItem from="1673402030151" duration="92000" />
+      <workItem from="1673402225114" duration="120000" />
+      <workItem from="1673405281502" duration="1820000" />
+      <workItem from="1673497545492" duration="6063000" />
+      <workItem from="1673714426207" duration="10444000" />
     </task>
     <servers />
   </component>
