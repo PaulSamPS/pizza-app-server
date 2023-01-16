@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/product.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/product.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/product.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/products/Мясной Стартер/a75c7ed3-3dcc-48b6-8a32-170e03a2c92f.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/products/Сырная/89a70a09-d76b-4c9f-ad54-1d00c218e549.webp" beforeDir="false" afterPath="$PROJECT_DIR$/static/product/Сырная/89a70a09-d76b-4c9f-ad54-1d00c218e549.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/products/Сырная/a2a2a294-3b41-4beb-88c5-c5e43c8dc72f.webp" beforeDir="false" afterPath="$PROJECT_DIR$/static/product/Сырная/a2a2a294-3b41-4beb-88c5-c5e43c8dc72f.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/file.upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +70,7 @@
       <workItem from="1673402225114" duration="120000" />
       <workItem from="1673405281502" duration="1820000" />
       <workItem from="1673497545492" duration="6063000" />
-      <workItem from="1673714426207" duration="10444000" />
+      <workItem from="1673714426207" duration="12729000" />
     </task>
     <servers />
   </component>

@@ -15,15 +15,15 @@ class AuthController {
 
       if (!user) {
         const newUser = await User.create({ phone })
-        await Code.create({ user: newUser._id, code: code })
-        return res.json(newUser._id)
+        const userCode = await Code.create({ user: newUser._id, code: code })
+        return res.json({ userId: newUser._id, date: userCode.updatedAt })
       }
 
       const userCode = await Code.findOne({ user: user._id })
 
       if (!userCode) {
         await Code.create({ user: user._id, code: code })
-        return res.json(user._id)
+        return res.json({ userId: user._id, date: userCode.updatedAt })
       }
 
       if (moment(userCode.updatedAt).add('2', 'minutes').format('h:mm:ss') > moment(Date.now()).format('h:mm:ss')) {
