@@ -4,7 +4,7 @@ const jwt = require('jsonwebtoken')
 class TokenService {
   generateTokens(payload) {
     const accessToken = jwt.sign(payload, process.env.SECRET_KEY, {
-      expiresIn: '24h',
+      expiresIn: '15m',
     })
     const refreshToken = jwt.sign(payload, process.env.SECRET_REFRESH_KEY, {
       expiresIn: '30d',
@@ -18,8 +18,11 @@ class TokenService {
   async saveToken(user, accessToken, refreshToken) {
     const tokenData = await Token.findOne({ user: user })
     if (tokenData) {
-      tokenData.refreshToken = refreshToken
+      if (refreshToken) {
+        tokenData.refreshToken = refreshToken
+      }
       tokenData.accessToken = accessToken
+      await tokenData.save()
       return tokenData
     } else {
       return await Token.create({ user: user, accessToken, refreshToken })

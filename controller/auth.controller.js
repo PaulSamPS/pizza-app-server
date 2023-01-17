@@ -20,10 +20,11 @@ class AuthController {
       }
 
       const userCode = await Code.findOne({ user: user._id })
+      console.log(userCode)
 
-      if (!userCode) {
-        await Code.create({ user: user._id, code: code })
-        return res.json({ userId: user._id, date: userCode.updatedAt })
+      if (user && userCode === null) {
+        const newCode = await Code.create({ user: user._id, code: code })
+        return res.json({ userId: user._id, date: newCode.updatedAt })
       }
 
       if (moment(userCode.updatedAt).add('2', 'minutes').format('h:mm:ss') > moment(Date.now()).format('h:mm:ss')) {
@@ -47,7 +48,8 @@ class AuthController {
     const findCode = await Code.findOne({ user: userId.toString(), code: code }).populate('user')
 
     if (findCode) {
-      const userDto = new UserDto(findCode.user)
+      const user = await User.findById(findCode.user._id)
+      const userDto = new UserDto(user)
       const token = tokenService.generateTokens({ ...userDto })
       await tokenService.saveToken(findCode.user._id, token.accessToken, token.refreshToken)
       res.cookie('refreshToken', token.refreshToken, {
@@ -58,7 +60,7 @@ class AuthController {
         signed: true,
       })
       res.cookie('accessToken', token.accessToken, {
-        maxAge: 86400 * 100,
+        maxAge: 60 * 15 * 1000,
         httpOnly: true,
         sameSite: 'none',
         secure: true,
