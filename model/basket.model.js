@@ -7,6 +7,8 @@ const BasketSchema = new Schema(
       {
         pizza: { type: Schema.Types.ObjectId, ref: 'Pizza' },
         product: { type: Schema.Types.ObjectId, ref: 'Product' },
+        size: { type: String },
+        dough: { type: String },
         qty: { type: Number },
       },
     ],
