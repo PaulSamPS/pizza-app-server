@@ -7,8 +7,6 @@
     <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/basket.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/basket.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/basket.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/basket.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/basket.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/basket.router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +76,7 @@
       <workItem from="1674218311351" duration="1808000" />
       <workItem from="1674314497889" duration="1219000" />
       <workItem from="1674530629537" duration="683000" />
-      <workItem from="1674762860310" duration="12713000" />
+      <workItem from="1674762860310" duration="24059000" />
     </task>
     <servers />
   </component>
