@@ -10,6 +10,7 @@ const BasketSchema = new Schema(
         size: { type: String },
         dough: { type: String },
         qty: { type: Number },
+        price: { type: Number },
       },
     ],
     totalPrice: { type: Number },

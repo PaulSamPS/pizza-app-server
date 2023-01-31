@@ -50,12 +50,13 @@ class BasketController {
 
       if (product) {
         product.qty += 1
+        product.price = productPrice
         basket.totalPrice += productPrice
         await basket.save()
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
         return res.json(newBasket)
       } else {
-        basket.products.push({ product: productId, qty: 1 })
+        basket.products.push({ product: productId, qty: 1, price: productPrice })
         basket.totalPrice += productPrice
         await basket.save()
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
@@ -66,7 +67,7 @@ class BasketController {
       basketId = created._id
       res.cookie('basket', basketId, { maxAge, signed })
       const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
-      newBasket.products.push({ product: productId, qty: 1 })
+      newBasket.products.push({ product: productId, qty: 1, price: productPrice })
       newBasket.totalPrice += productPrice
       await newBasket.save()
 
@@ -86,12 +87,13 @@ class BasketController {
 
       if (pizza) {
         pizza.qty += 1
+        pizza.price = pizzaPrice
         basket.totalPrice += Number(pizzaPrice)
         await basket.save()
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
         return res.json(newBasket)
       } else {
-        basket.products.push({ pizza: pizzaId, qty: 1, size, dough })
+        basket.products.push({ pizza: pizzaId, qty: 1, size, dough, price: pizzaPrice })
         basket.totalPrice += Number(pizzaPrice)
         await basket.save()
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
@@ -102,7 +104,7 @@ class BasketController {
       basketId = created._id
       res.cookie('basket', basketId, { maxAge, signed })
       const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
-      newBasket.products.push({ pizza: pizzaId, qty: 1, size, dough })
+      newBasket.products.push({ pizza: pizzaId, qty: 1, size, dough, price: pizzaPrice })
       newBasket.totalPrice += Number(pizzaPrice)
       await newBasket.save()
 
@@ -111,40 +113,63 @@ class BasketController {
   }
 
   async decrease(req, res) {
-    const { productId, productPrice } = req.body
+    const { productId, productPrice, size, dough } = req.body
     if (req.signedCookies.basket) {
       basketId = req.signedCookies.basket
-      const basket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
-      const product = basket.products.find((p) => p.product.toString() === productId)
+      const basket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+      const product = basket.products.filter((f) => f.product).find((p) => p.product._id.toString() === productId)
+      const pizza = basket.products
+        .filter((p) => p.pizza)
+        .find((pizza) => pizza.pizza._id.toString() === productId && pizza.size === size && pizza.dough === dough)
+      console.log(product)
 
       if (product) {
         if (product.qty > 1) {
           product.qty -= 1
-          basket.totalPrice -= Number(productPrice)
+          basket.totalPrice -= productPrice
           await basket.save()
         }
-        const newBasket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
+        const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+        return res.json(newBasket)
+      }
+
+      if (pizza) {
+        if (pizza.qty > 1) {
+          pizza.qty -= 1
+          basket.totalPrice -= productPrice
+          await basket.save()
+        }
+        const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
         return res.json(newBasket)
       }
     }
   }
 
   async increase(req, res) {
-    const { productId } = req.body
-    basketId = req.signedCookies.basket
+    const { productId, productPrice, size, dough } = req.body
+    if (req.signedCookies.basket) {
+      basketId = req.signedCookies.basket
+      const basket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+      const product = basket.products.filter((f) => f.product).find((p) => p.product._id.toString() === productId)
+      const pizza = basket.products
+        .filter((p) => p.pizza)
+        .find((pizza) => pizza.pizza._id.toString() === productId && pizza.size === size && pizza.dough === dough)
 
-    const basket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
-    const product = basket.products.find((p) => p.product.toString() === productId)
-
-    if (product) {
-      if (product.qty > 1) {
+      if (product) {
         product.qty += 1
-        basket.totalPrice += product.product.price
+        basket.totalPrice += Number(productPrice)
         await basket.save()
+        const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+        return res.json(newBasket)
       }
-      const newBasket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
 
-      return res.json(newBasket)
+      if (pizza) {
+        pizza.qty += 1
+        basket.totalPrice += Number(productPrice)
+        await basket.save()
+        const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+        return res.json(newBasket)
+      }
     }
   }
 
