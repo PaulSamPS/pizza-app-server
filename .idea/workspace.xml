@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="" />
+    <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/order.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/order.model.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +34,7 @@
     "WebServerToolWindowFactoryState": "false",
     "javascript.nodejs.core.library.configured.version": "18.12.1",
     "javascript.nodejs.core.library.typings.version": "18.11.18",
-    "last_opened_file_path": "C:/Users/psamo/WebstormProjects/pizza-app-server",
+    "last_opened_file_path": "C:/Users/psamo/WebstormProjects/pizza-next-app",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -39,6 +42,7 @@
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\psamo\\WebstormProjects\\pizza-app-server\\node_modules\\prettier",
     "settings.editor.selected.configurable": "preferences.general",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2022.3.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,6 +80,14 @@
       <workItem from="1674762860310" duration="29069000" />
       <workItem from="1675239954048" duration="1646000" />
       <workItem from="1675579191297" duration="106000" />
+      <workItem from="1675725810649" duration="936000" />
+      <workItem from="1675889012931" duration="665000" />
+      <workItem from="1676160779103" duration="624000" />
+      <workItem from="1676165862943" duration="18000" />
+      <workItem from="1676234643396" duration="606000" />
+      <workItem from="1676319305206" duration="622000" />
+      <workItem from="1676375624066" duration="569000" />
+      <workItem from="1676492971081" duration="919000" />
     </task>
     <servers />
   </component>
