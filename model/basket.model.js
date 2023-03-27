@@ -14,6 +14,7 @@ const BasketSchema = new Schema(
       },
     ],
     totalPrice: { type: Number },
+    totalCount: { type: Number },
   },
   { timestamps: true }
 )
