@@ -82,8 +82,8 @@ class ProductController {
 
   async getOnePizza(req, res, next) {
     try {
-      const { id } = req.params
-      const pizza = await Pizza.findOne({ pathname: id })
+      const { pathname } = req.params
+      const pizza = await Pizza.findOne({ pathname })
       return res.json(pizza)
     } catch (e) {
       return next(ApiError.badRequest(e.message))
