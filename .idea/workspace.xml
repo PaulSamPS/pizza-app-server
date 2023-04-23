@@ -6,14 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7ea75d11-6b21-4b65-adbd-dca8ecb3ddf5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/product.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/product.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/order.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/order.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/product.router.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/product.router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Додстер/471c4fd7-4135-424e-a615-994b5c57bf25.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Мясной Стартер/f0f23ab2-6232-43fc-81f0-27a7a9506518.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/89a70a09-d76b-4c9f-ad54-1d00c218e549.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/product/Сырная/a2a2a294-3b41-4beb-88c5-c5e43c8dc72f.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/basket.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/basket.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/order.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/order.controller.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +110,13 @@
       <workItem from="1680998021693" duration="657000" />
       <workItem from="1681101077561" duration="66000" />
       <workItem from="1681428982914" duration="1203000" />
-      <workItem from="1681503121229" duration="13761000" />
+      <workItem from="1681503121229" duration="14317000" />
+      <workItem from="1681599128405" duration="645000" />
+      <workItem from="1681603441600" duration="628000" />
+      <workItem from="1681874286635" duration="1120000" />
+      <workItem from="1681960463916" duration="3130000" />
+      <workItem from="1682130972374" duration="1138000" />
+      <workItem from="1682187492804" duration="3500000" />
     </task>
     <servers />
   </component>
@@ -128,7 +128,6 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/routes/user.router.js</url>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

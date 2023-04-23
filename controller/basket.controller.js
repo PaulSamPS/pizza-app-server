@@ -17,6 +17,7 @@ class BasketController {
     if (req.signedCookies.basket) {
       basketId = req.signedCookies.basket
       const basket = await Basket.findOne({ _id: basketId }).populate(['products.product', 'products.pizza'])
+      res.cookie('basket', basketId, { maxAge, signed })
       return res.json(basket)
     } else {
       return res.json(null)

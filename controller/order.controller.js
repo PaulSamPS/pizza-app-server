@@ -3,11 +3,10 @@ const Order = require('../model/order.model')
 class OrderController {
   async get(req, res, next) {
     const { userId } = req.params
-    const user = await Order.findOne({ user: userId }).populate(['orders.products.pizza', 'orders.products.product'])
+    const order = await Order.findOne({ user: userId }).populate(['orders.products.pizza', 'orders.products.product'])
 
-    if (user) {
-      console.log(user)
-      return res.json(user)
+    if (order) {
+      return res.json(order)
     }
 
     return res.json(null)
@@ -17,7 +16,7 @@ class OrderController {
     const { userId, products, info, totalPrice } = req.body
     const user = await Order.findOne({ user: userId }).populate(['orders.products.pizza', 'orders.products.product'])
     if (user) {
-      user.orders.push({
+      user.orders.unshift({
         products,
         info,
         status: 'Принят',
@@ -27,7 +26,6 @@ class OrderController {
       })
       await user.save()
 
-      console.log(user, '1')
       return res.json(user)
     }
 
@@ -37,7 +35,7 @@ class OrderController {
     })
 
     const newOrderUser = await Order.findOne({ user: userOrder.user }).populate(['orders.products.pizza', 'orders.products.product'])
-    newOrderUser.orders.push({
+    newOrderUser.orders.unshift({
       products,
       info,
       status: 'Принят',
@@ -48,7 +46,6 @@ class OrderController {
 
     await newOrderUser.save()
 
-    console.log(newOrderUser, '2')
     return res.json(newOrderUser)
   }
 }
