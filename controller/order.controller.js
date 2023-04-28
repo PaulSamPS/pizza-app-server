@@ -1,6 +1,19 @@
 const Order = require('../model/order.model')
 
 class OrderController {
+  async getOne(req, res, next) {
+    const { userId } = req.body
+    const { orderId } = req.params
+    const order = await Order.findOne({ user: userId }).populate(['orders.products.pizza', 'orders.products.product'])
+
+    if (order) {
+      const oneOrder = order.orders.find((order) => order._id.toString() === orderId)
+      return res.json(oneOrder)
+    }
+
+    return res.json(null)
+  }
+
   async get(req, res, next) {
     const { userId } = req.params
     const order = await Order.findOne({ user: userId }).populate(['orders.products.pizza', 'orders.products.product'])
