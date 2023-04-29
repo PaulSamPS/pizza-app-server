@@ -41,8 +41,26 @@ class BasketController {
     }
   }
 
+  async repeatOrder(req, res, next) {
+    const { arr, ttp, ttc } = req.body
+
+    if (req.signedCookies.basket) {
+      basketId = req.signedCookies.basket
+      const basket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+      console.log(arr)
+      basket.products.push(...arr)
+      basket.totalPrice = ttp
+      basket.totalCount = ttc
+      await basket.save()
+      const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+      return res.json(newBasket)
+    } else {
+      return res.json(next({ message: 'что-то пошло не так' }))
+    }
+  }
+
   async addProductToBasket(req, res) {
-    const { productId, productPrice, productQty, sum, count } = req.body
+    const { productId, productPrice } = req.body
 
     if (req.signedCookies.basket) {
       basketId = req.signedCookies.basket
@@ -58,14 +76,6 @@ class BasketController {
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
         return res.json(newBasket)
       } else {
-        if (count) {
-          basket.products.push({ product: productId, qty: productQty, price: productPrice })
-          basket.totalPrice = sum
-          basket.totalCount = count
-          await basket.save()
-          const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
-          return res.json(newBasket)
-        }
         basket.products.push({ product: productId, qty: 1, price: productPrice })
         basket.totalPrice += productPrice
         basket.totalCount += 1
@@ -211,7 +221,6 @@ class BasketController {
 
   async clear(req, res) {
     basketId = req.signedCookies.basket
-    console.log(basketId)
     const basket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
     basket.products = []
     basket.totalPrice = 0

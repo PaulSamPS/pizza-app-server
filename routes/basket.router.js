@@ -3,6 +3,7 @@ const router = new Router()
 const basketController = require('../controller/basket.controller')
 
 router.post('/add-product', basketController.addProductToBasket)
+router.post('/repeat-order', basketController.repeatOrder)
 router.post('/add-pizza', basketController.addPizzaToBasket)
 router.post('/decrease', basketController.decrease)
 router.post('/increase', basketController.increase)
