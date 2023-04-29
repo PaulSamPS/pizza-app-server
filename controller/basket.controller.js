@@ -42,7 +42,7 @@ class BasketController {
   }
 
   async addProductToBasket(req, res) {
-    const { productId, productPrice } = req.body
+    const { productId, productPrice, productQty, sum, count } = req.body
 
     if (req.signedCookies.basket) {
       basketId = req.signedCookies.basket
@@ -58,6 +58,14 @@ class BasketController {
         const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
         return res.json(newBasket)
       } else {
+        if (count) {
+          basket.products.push({ product: productId, qty: productQty, price: productPrice })
+          basket.totalPrice = sum
+          basket.totalCount = count
+          await basket.save()
+          const newBasket = await Basket.findById(basketId).populate(['products.product', 'products.pizza'])
+          return res.json(newBasket)
+        }
         basket.products.push({ product: productId, qty: 1, price: productPrice })
         basket.totalPrice += productPrice
         basket.totalCount += 1
@@ -203,6 +211,7 @@ class BasketController {
 
   async clear(req, res) {
     basketId = req.signedCookies.basket
+    console.log(basketId)
     const basket = await Basket.findById(basketId).populate('products', 'pizza', 'product')
     basket.products = []
     basket.totalPrice = 0
